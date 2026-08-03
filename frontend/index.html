@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helen Tesfaye | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">   
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#update">Update</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="home" class="portfolio">
+            <div class="profile-container">
+                <img id="profile-image" src="helen.jpg" alt="Helen's image">
+                <div class="text">
+                    <h3 id="name">Hi, I'm Helen Tesfaye</h3>
+                    <p id="description">A 2nd year Software Engineering student</p>
+                    <a href="cv.docx" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p id="about-text">
+                Hello, I'm Helen Tesfaye, a Software Engineering student at Addis Ababa science and technology university...
+            </p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list" id="skills-list">
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-cards" id="project-list">
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <ul id="contact-list">
+                    <li><p id="email">helentesfaye9421@gmail.com</p></li>
+                    <li><p>Addis Ababa, Ethiopia</p></li>
+                    <li><p>GitHub - helena0904</p></li>
+                    <li><p>Instagram - hidden0940</p></li>
+                    <li><p>Telegram - ht09004</p></li>
+                    <li><a href="mailto:helentesfaye9421@gmail.com">+251947981247</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="update" class="section">
+            <h2>Update Profile</h2>
+            
+            <div class="update-box">
+                <h3>Basic Information</h3>
+                <input id="newName" type="text" placeholder="Full Name">
+                <input id="newTitle" type="text" placeholder="Title">
+                <input id="newDescription" type="text" placeholder="Department">
+                <textarea id="newAbout" placeholder="About Me"></textarea>
+                <input id="newEmail" type="email" placeholder="Email">
+                <button onclick="updateBasicInfo()">Update Basic Info</button>
+                <div id="basicMessage" style="margin-top: 10px; color: #d4af37;"></div>
+            </div>
+
+            <hr style="border-color: #d4af37; margin: 30px 0;">
+
+            <div class="update-box">
+                <h3>Add New Skill</h3>
+                <input id="newSkill" type="text" placeholder="Skill">
+                <button onclick="addSkill()">Add Skill</button>
+                <div id="skillMessage" style="margin-top: 10px; color: #d4af37;"></div>
+            </div>
+
+            <hr style="border-color: #d4af37; margin: 30px 0;">
+
+            <div class="update-box">
+                <h3>Add New Project</h3>
+                <input id="newProjectName" type="text" placeholder="Project Name">
+                <textarea id="newProjectDesc" placeholder="Description"></textarea>
+                <button onclick="addProject()">Add Project</button>
+                <div id="projectMessage" style="margin-top: 10px; color: #d4af37;"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 Helen Tesfaye. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
